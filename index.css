@@ -1,0 +1,242 @@
+/* ------------------------------
+   General Styling
+------------------------------ */
+body {
+  background-color: #f4f4f4; /* Light gray background */
+  background-image: url("Grainss.png");
+  background-size: auto; /* Use original image size */
+  background-repeat: repeat; /* Repeat the image */
+  background-position: top left; /* Align at the top left */
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  min-height: 100vh; /* Full height viewport */
+  padding: 20px;
+}
+
+/* Universal Reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Typography */
+.rubik {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+}
+
+.montecarlo-regular {
+  font-family: "MonteCarlo", serif;
+  font-weight: 400;
+}
+
+.mea-culpa-regular {
+  font-family: "Mea Culpa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georgia", serif;
+  color: #222; /* Slightly darker for emphasis */
+}
+
+/* Custom styling for h1 */
+h1 {
+  font-family: "mea-culpa-regular";
+  font-size: 100px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Lines */
+.line-1 {
+  height: 6px;
+  border: 0;
+  border-top: 6px solid #111;
+}
+
+.line-2 {
+  height: 6px;
+  border: 0;
+  border-top: 3px solid #111;
+}
+
+/* ------------------------------
+     Page 1 Layout
+  ------------------------------ */
+.page-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 60px;
+}
+
+.image-container {
+  margin-right: 20px;
+}
+
+.image-container img {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex: 2;
+}
+
+/* ------------------------------
+     Page 2 Layout
+  ------------------------------ */
+.page-2 {
+  margin: 60px;
+}
+
+.article {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.article-title h3 {
+  font-size: 1.7rem;
+}
+
+.article-title p {
+  font-size: 1.2rem;
+}
+
+.article img {
+  width: 80%;
+  height: auto;
+}
+
+.article-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+}
+
+/* ------------------------------
+     Images
+  ------------------------------ */
+
+/* General styling for images */
+.enhanced-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  display: block;
+}
+
+/* Large Article Image */
+.article-image-large {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Images */
+.grid-image-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.grid-image-1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered Image */
+.centered-image {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.centered-image img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Side Images */
+.side-image-1 img,
+.side-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Image Caption */
+.image-caption {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* ------------------------------
+     Miscellaneous
+  ------------------------------ */
+
+/* Acknowledgements Section */
+.acknowledgements {
+  clear: both;
+  margin-top: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0;
+}
+
+/* Newspaper Theme */
+.newspaper-theme {
+  font-family: "Times New Roman", serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 20px;
+}
