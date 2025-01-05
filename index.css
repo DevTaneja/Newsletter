@@ -241,51 +241,348 @@ p {
   margin: 20px;
 }
 
-
 /* Placements Section Styles */
 #placements {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+  text-align: center;
 }
 
-#placements h2 {
+.section-title {
+  font-family: "Times New Roman", serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 20px;
+}
+
+.highest-package-box {
+  background-color: rgba(
+    230,
+    230,
+    250,
+    0.8
+  ); /* Match the theme's transparency */
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.highest-package-title {
+  font-family: "Georgia", serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.highest-package-amount {
+  font-size: 2.5em;
+  color: #555;
+}
+
+.picture-box {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.picture-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name-company-box {
+  background-color: rgba(230, 230, 250, 0.8);
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  max-width: 220px;
+  margin-top: 10px;
   text-align: center;
   font-size: 2rem;
   color: #2a2a2a;
   margin-bottom: 20px;
 }
 
-.placements-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+.name-company-text {
+  font-family: "Times New Roman", serif;
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #222;
 }
 
-.placement-item {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.placement-item img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-}
-
-.placement-item h3 {
-  font-size: 1.5rem;
-  color: #4caf50;
-  margin-bottom: 10px;
-}
-
-.placement-item p {
-  font-size: 1rem;
+.company-text {
+  font-style: italic;
   color: #555;
+}
+/* Table Container */
+.table-container {
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  max-width: 800px;
+  overflow-x: auto;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table Headers and Data */
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  font-family: "Arial", sans-serif;
+  color: #000;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#placements-table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* White border with 50% opacity */
+}
+
+#placements-table th,
+#placements-table td {
+  border: 1px solid rgba(255, 255, 255, 0.5); /* White border with 50% opacity */
+  padding: 10px;
+  text-align: center;
+  color: white; /* White text color for contrast */
+}
+
+#placements-table th {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker black for header */
+  font-weight: bold;
+}
+
+#placements-table tr:nth-child(even) {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Light black for alternate rows */
+}
+.placement-section {
+  padding: 20px;
+}
+
+.placement-year {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.placement-year h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black; /* Change to black */
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Update the placement table styling to match the previous table */
+.placement-table {
+  width: 100%;
+  border-collapse: collapse;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.4); /* Adjusted background color */
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: black; /* Change text color to black */
+  margin-bottom: 20px;
+}
+
+.placement-table th,
+.placement-table td {
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Border to match previous table */
+  padding: 10px;
+  text-align: center;
+}
+
+.placement-table th {
+  background-color: rgba(255, 255, 255, 0.8); /* Header background color */
+  font-weight: bold;
+}
+
+.placement-table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.6); /* Even rows background color */
+}
+
+.placement-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Hover effect for rows */
+}
+
+/* Average Package Box */
+.average-package-box {
+  background-color: rgba(255, 255, 255, 0.4); /* Match the general background */
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 300px;
+  text-align: center;
+  margin: 20px auto; /* Centered horizontally */
+  backdrop-filter: blur(10px);
+}
+
+.average-package-text {
+  font-family: "Times New Roman", serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Project Development Section */
+.project-development-section {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4); /* Match the general background */
+  margin-top: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.section-title {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Table-like layout for Company and Group */
+.project-development-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-development-row {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Match the table's row styling */
+  text-align: center;
+}
+
+.company-column {
+  width: 70%;
+  font-family: "Times New Roman", serif;
+  font-size: 1.1em;
+  color: #222;
+}
+
+.group-column {
+  width: 20%;
+  font-family: "Times New Roman", serif;
+  font-size: 1.1em;
+  color: #333;
+  text-align: center;
+}
+
+.company-column {
+  width: 70%;
+  font-family: "Times New Roman", serif;
+  font-size: 1.1em;
+  color: #222;
+}
+
+.group-column {
+  width: 20%;
+  font-family: "Times New Roman", serif;
+  font-size: 1.1em;
+  color: #333;
+  text-align: center;
+}
+/* Internship Section */
+.internship-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* Match the general background */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+.section-title {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+.internship-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.internship-box {
+  background-color: rgba(255, 255, 255, 0.4); /* Same as other sections */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.internship-title {
+  font-family: "Georgia", serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.internship-amount {
+  font-size: 2.5em;
+  color: #555;
+  text-align: center;
+}
+
+.internship-note {
+  font-family: "Times New Roman", serif;
+  font-size: 0.9em;
+  color: #555;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.flex-container {
 }
