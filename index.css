@@ -475,6 +475,7 @@ tr:hover {
   margin-top: 30px;
   border-radius: 10px;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .section-title {
@@ -537,6 +538,7 @@ tr:hover {
   background-color: rgba(255, 255, 255, 0.5); /* Match the general background */
   border-radius: 10px;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   text-align: center;
 }
 .section-title {
@@ -584,5 +586,59 @@ tr:hover {
   margin-top: 10px;
 }
 
-.flex-container {
+.calendar-container {
+  justify-self: center;
+}
+
+/* Gallery */
+.gallery {
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+/* Gallery item */
+.gallery-item {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative; /* This ensures the hover effect works as expected */
+}
+
+/* Image styling */
+.gallery-item img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 200px; /* Set fixed height for all images */
+  object-fit: cover; /* This ensures the images maintain their aspect ratio and crop as needed */
+  transition: all 300ms ease; /* Smooth transition for hover effect */
+  border-radius: 8px; /* Optional: to give rounded corners */
+}
+
+/* Hover effect */
+.gallery-item img:hover {
+  transform: scale(1.2); /* Scale the image on hover */
+  z-index: 2; /* Ensure the image stays on top during hover */
+}
+
+/* Ensure the text container spans across the available space */
+.gallery-text {
+  display: flex;
+  justify-content: center; /* Centers text horizontally */
+  align-items: center; /* Centers text vertically */
+  height: 200px; /* Set a height for the container */
+}
+
+/* Style for the text itself */
+.gallery-text h2 {
+  text-align: center;
+  font-size: 40px;
+  /* margin: 0; Remove any default margin */
+}
+
+#ITdept {
+  color: #1976d2;
 }

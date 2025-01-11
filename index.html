@@ -3,21 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2024 Newletter</title>
+    <title>2024 Newsletter</title>
     <link href="index.css" rel="stylesheet" />
+    <link href="calenderstyle.css" rel="stylesheet" />
+    <!-- Preconnect to Google's font servers -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap"
       rel="stylesheet"
     />
   </head>
+  
   <body>
     <div class="container">
       <hr class="line-1" />
@@ -369,10 +372,71 @@
 </section>
 
       <div class="page-2 newspaper-theme">
+
         <h2 class="section-title">
           Activities Conducted from 1st July 2024 to 30th September 2024
         </h2>
-      
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <button id="prev-month">❮</button>
+            <h2 id="month-year">August 2024</h2>
+            <button id="next-month">❯</button>
+          </div>
+          
+          <!-- Days of the week row -->
+          <div class="days-row">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          
+          <div id="calendar-grid"></div>
+          
+          <!-- Modal for Event Details -->
+          <div id="event-modal" class="modal">
+            <div class="modal-content">
+              <span class="close-button" id="close-modal">×</span>
+              <h3 id="event-title"></h3>
+              <p id="event-description"></p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="img/picture1.jpg" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/picture2.jpg" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/picture3.jpg" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/picture4.jpg" />
+          </figure>
+          <div class="gallery-text">
+            <h2>PICT <span id="ITdept">IT</span> DEPARTMENT</h2>
+          </div>
+          <figure class="gallery-item">
+            <img src="img/picture6.jpg" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/picture7.jpg" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/picture8.jpg" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/picture9.jpg" />
+          </figure>
+        </div>
+        
+        <script src="script.js"></script>
+        
         <div class="article">
           <!-- Article Header -->
           <div class="article-header">
@@ -390,7 +454,7 @@
               </p>
             </div>
           </div>
-      
+          
           <!-- Introduction -->
           <p class="intro">
             <em>
@@ -451,8 +515,6 @@
           </p>
         </div>
       </div>
-    
-
-       
+      
   </body>
 </html>
