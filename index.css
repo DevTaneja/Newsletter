@@ -86,22 +86,35 @@ p {
   ------------------------------ */
 .page-1 {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin: 60px;
 }
 
 .image-container {
   margin-right: 20px;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .image-container img {
-  justify-content: center;
+  padding: 0px;
   width: 100%;
   height: auto;
+  margin: 0px;
 }
 
 .text-container {
-  flex: 2;
+  display: grid;
+  margin: 2px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 2px;
+  grid-gap: 20px 40px;
+}
+.College {
+  margin: 0px 2px;
+  padding: 0px 2px;
 }
 
 /* ------------------------------
@@ -620,6 +633,7 @@ tr:hover {
 
 /* Hover effect */
 .gallery-item img:hover {
+  /* border-radius: 8px; */
   transform: scale(1.2); /* Scale the image on hover */
   z-index: 2; /* Ensure the image stays on top during hover */
 }

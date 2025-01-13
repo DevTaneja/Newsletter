@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   
   <body>
@@ -46,16 +47,39 @@
           <img src="college.jpg" alt="Large Image" />
         </div>
         <div class="text-container">
-          <h2>Headline of the Article</h2>
+          <div class="College">
+          <h2>Institue Vision</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            numquam pariatur quae harum ullam ut, a, voluptatem aut temporibus
-            atque et. Voluptate cumque ipsam necessitatibus, asperiores quo
-            voluptatem veritatis repellendus! This is the content of the
-            article. The article continues with more detailed information,
-            explaining the topic of the headline. Images and text are aligned
-            side by side for a modern newspaper style layout.
+            SCTR’s Pune Institute of Computer Technology envisions to be a centre of excellence in higher technical education and research, producing global leaders in the field of technology.
+
           </p>
+          </div>
+
+        <div class="College">
+          <h2>Institue Mission</h2>
+          <p>
+            Provide rigorous academic training that equips students to excel in their professional careers with the development of universal human values.
+            Foster research and innovation culture amongst faculty and students by encouraging interdisciplinary collaborations, thereby contributing to technological advancements.
+            Nurture leadership qualities in students through development of analytical thinking, problem-solving, and effective communication skills. 
+            
+          </p>
+        </div>
+
+        <div class="Dept">
+          <h2>Department Vision</h2>
+          <p>
+            The department endeavors to be recognized globally as a centre of academic excellence and research in Information Technology. 
+
+          </p>
+        </div>
+
+        <div class="Dept">
+          <h2>Department Mission</h2>
+          <p>
+            To inculcate research culture among students by imparting information technology related fundamental knowledge, recent technological trends and ethics to get recognized as globally acceptable and socially responsible professionals
+
+          </p>
+        </div>
         </div>
       </div>
       <!-- Placements Section -->
@@ -81,6 +105,76 @@
   </div>
 
    <!-- Placement Table -->
+   <h2>Placement Statistics</h2>
+   <canvas id="placementChart" width="800" height="400"></canvas>
+ 
+   <script>
+     // Data for the chart
+     const companyNames = [
+       "Adobe", "PhonePe", "BNY Mellon", "Druva", "Schlumberger", 
+       "Deutsche Bank", "BMC", "ION", "Tracelink", "eQ Technologic", "Barclays"
+     ];
+ 
+     const studentsPlaced = [1, 2, 2, 2, 2, 3, 4, 4, 1, 3, 19];
+     const packagesOffered = [47, 33, 21.64, 20.1, 19.73, 19.63, 14, 14, 13.9, 13.88, 13.7];
+ 
+     // Configuring the chart
+     const ctx = document.getElementById('placementChart').getContext('2d');
+     const placementChart = new Chart(ctx, {
+       type: 'bar', // Bar chart
+       data: {
+         labels: companyNames,
+         datasets: [
+           {
+             label: 'Number of Students Placed',
+             data: studentsPlaced,
+             backgroundColor: 'rgba(75, 192, 192, 0.6)', // Light teal
+             borderColor: 'rgba(75, 192, 192, 1)',
+             borderWidth: 1
+           },
+           {
+             label: 'Package Offered (LPA)',
+             data: packagesOffered,
+             backgroundColor: 'rgba(255, 99, 132, 0.6)', // Light red
+             borderColor: 'rgba(255, 99, 132, 1)',
+             borderWidth: 1
+           }
+         ]
+       },
+       options: {
+         responsive: true,
+         plugins: {
+           legend: {
+             position: 'top'
+           },
+           tooltip: {
+             callbacks: {
+               label: function(tooltipItem) {
+                 const datasetLabel = tooltipItem.dataset.label || '';
+                 return `${datasetLabel}: ${tooltipItem.raw}`;
+               }
+             }
+           }
+         },
+         scales: {
+           x: {
+             beginAtZero: true,
+             title: {
+               display: true,
+               text: 'Company Name'
+             }
+           },
+           y: {
+             beginAtZero: true,
+             title: {
+               display: true,
+               text: 'Value'
+             }
+           }
+         }
+       }
+     });
+   </script>
    <div class="table-container">
     <table>
       <thead>
@@ -435,7 +529,7 @@
           </figure>
         </div>
         
-        <script src="script.js"></script>
+        
         
         <div class="article">
           <!-- Article Header -->
@@ -514,7 +608,9 @@
             Supported by <strong>Dr. Archana Ghotkar</strong> (Head of IT Department), <strong>Rachna Chhajed Karnavat</strong> (Associate Professor), and AWS Cloud Club PICT members, the event concluded with inspiration and joyful memories.
           </p>
         </div>
+        <button id="bt1">Useless button</button>
       </div>
       
+      <script src="script.js"></script>
   </body>
 </html>
