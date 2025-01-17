@@ -656,3 +656,75 @@ tr:hover {
 #ITdept {
   color: #1976d2;
 }
+
+
+/*about us */
+/* Content Section */
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* Increased padding between the two team members */
+  margin-bottom: 20px;
+}
+
+.member, .teacher-section {
+  text-align: center;
+}
+
+.member img, .teacher-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.member h2, .teacher-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.teacher-section h2 {
+  font-size: 2rem; /* Increased font size for the teacher's name */
+}
+
+.member a, .teacher-section a {
+  text-decoration: none;
+  color: #0077b5;
+  font-weight: bold;
+}
+
+.member a:hover, .teacher-section a:hover {
+  text-decoration: underline;
+}
+
+/* Teacher Section */
+.teacher-section {
+  margin-top: 40px;
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 2px solid #000;
+  margin-top: 20px;
+  /* color: #555; */
+}
+.about-us {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(164, 164, 164, 0.21);
+  border-radius: 1rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column;
+      align-items: center;
+    }
+}
