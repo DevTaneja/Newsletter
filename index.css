@@ -653,9 +653,9 @@ tr:hover {
   /* margin: 0; Remove any default margin */
 }
 
-#ITdept {
+/* #ITdept {
   color: #1976d2;
-}
+} */
 
 
 /*about us */
@@ -726,5 +726,6 @@ tr:hover {
   .content {
       flex-direction: column;
       align-items: center;
-    }
+      }
 }
+
