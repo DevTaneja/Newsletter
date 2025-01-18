@@ -124,9 +124,23 @@ p {
   margin: 60px;
 }
 
+
+.articles-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  padding: 0px;
+  row-gap: 0rem;
+  column-gap: 2rem;
+}
+.article-header{
+  display: flex;
+  flex-direction: column;
+}
 .article {
   border: 1px solid #ddd;
   padding: 10px;
+  /* display:flex; */
 }
 
 .article-title h3 {
@@ -165,22 +179,22 @@ p {
 
 /* General styling for images */
 .enhanced-image {
-  max-width: 90%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  margin: 0 auto;
-  display: block;
+  width: 100%; /* Ensures the image takes the full width of its container */
+  max-width: 100%; /* Prevents it from exceeding the container's width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Adds a nice shadow */
+  margin: 0 auto; /* Centers the image horizontally if needed */
+  display: block; /* Ensures the image behaves like a block-level element */
 }
 
-/* Large Article Image */
-.article-image-large {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+.article-image img{
+  width: 100%; /* Makes the container span the full width of its parent */
+  max-width: 100%; /* Prevents overflow */
+  height: auto; /* Ensures flexibility */
+  margin: 0; /* Removes any unwanted margins */
+  padding: 0; /* Removes padding for a clean look */
+  border-radius: 8px; /* Matches the image's border-radius */
 }
 
 /* Grid Images */

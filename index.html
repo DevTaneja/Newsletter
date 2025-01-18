@@ -9,7 +9,7 @@
     <!-- Preconnect to Google's font servers -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap"
@@ -21,7 +21,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
-  
+
   <body>
     <div class="container">
       <hr class="line-1" />
@@ -49,425 +49,441 @@
         </div>
         <div class="text-container">
           <div class="College">
-          <h2>Institue Vision</h2>
-          <p>
-            SCTR’s Pune Institute of Computer Technology envisions to be a centre of excellence in higher technical education and research, producing global leaders in the field of technology.
-
-          </p>
+            <h2>Institue Vision</h2>
+            <p>
+              SCTR’s Pune Institute of Computer Technology envisions to be a
+              centre of excellence in higher technical education and research,
+              producing global leaders in the field of technology.
+            </p>
           </div>
 
-        <div class="College">
-          <h2>Institue Mission</h2>
-          <p>
-            Provide rigorous academic training that equips students to excel in their professional careers with the development of universal human values.
-            Foster research and innovation culture amongst faculty and students by encouraging interdisciplinary collaborations, thereby contributing to technological advancements.
-            Nurture leadership qualities in students through development of analytical thinking, problem-solving, and effective communication skills. 
-            
-          </p>
-        </div>
+          <div class="College">
+            <h2>Institue Mission</h2>
+            <p>
+              Provide rigorous academic training that equips students to excel
+              in their professional careers with the development of universal
+              human values. Foster research and innovation culture amongst
+              faculty and students by encouraging interdisciplinary
+              collaborations, thereby contributing to technological
+              advancements. Nurture leadership qualities in students through
+              development of analytical thinking, problem-solving, and effective
+              communication skills.
+            </p>
+          </div>
 
-        <div class="Dept">
-          <h2>Department Vision</h2>
-          <p>
-            The department endeavors to be recognized globally as a centre of academic excellence and research in Information Technology. 
+          <div class="Dept">
+            <h2>Department Vision</h2>
+            <p>
+              The department endeavors to be recognized globally as a centre of
+              academic excellence and research in Information Technology.
+            </p>
+          </div>
 
-          </p>
-        </div>
-
-        <div class="Dept">
-          <h2>Department Mission</h2>
-          <p>
-            To inculcate research culture among students by imparting information technology related fundamental knowledge, recent technological trends and ethics to get recognized as globally acceptable and socially responsible professionals
-
-          </p>
-        </div>
+          <div class="Dept">
+            <h2>Department Mission</h2>
+            <p>
+              To inculcate research culture among students by imparting
+              information technology related fundamental knowledge, recent
+              technological trends and ethics to get recognized as globally
+              acceptable and socially responsible professionals
+            </p>
+          </div>
         </div>
       </div>
       <!-- Placements Section -->
-<section id="placements">
-  <h2 class="section-title">Placements Overview</h2>
+      <section id="placements">
+        <h2 class="section-title">Placements Overview</h2>
 
-  <div class="flex-container">
-      <div class="highest-package-box">
-          <div class="highest-package-title">Highest Package</div>
-          <div class="highest-package-amount">47 Lacs</div>
-      </div>
-
-      <div class="student-info">
-          <div class="picture-box">
-              <img src="path_to_image.jpg" alt="Student Picture">
+        <div class="flex-container">
+          <div class="highest-package-box">
+            <div class="highest-package-title">Highest Package</div>
+            <div class="highest-package-amount">47 Lacs</div>
           </div>
 
-          <div class="name-company-box">
+          <div class="student-info">
+            <div class="picture-box">
+              <img src="path_to_image.jpg" alt="Student Picture" />
+            </div>
+
+            <div class="name-company-box">
               <div class="name-company-text">Shraddha Pawar</div>
               <div class="company-text">(Adobe)</div>
+            </div>
           </div>
-      </div>
-  </div>
+        </div>
 
-   <!-- Placement Table -->
-   <h2>Placement Statistics</h2>
-   <canvas id="placementChart" width="800" height="400"></canvas>
- 
-   <script>
-     // Data for the chart
-     const companyNames = [
-       "Adobe", "PhonePe", "BNY Mellon", "Druva", "Schlumberger", 
-       "Deutsche Bank", "BMC", "ION", "Tracelink", "eQ Technologic", "Barclays"
-     ];
- 
-     const studentsPlaced = [1, 2, 2, 2, 2, 3, 4, 4, 1, 3, 19];
-     const packagesOffered = [47, 33, 21.64, 20.1, 19.73, 19.63, 14, 14, 13.9, 13.88, 13.7];
- 
-     // Configuring the chart
-     const ctx = document.getElementById('placementChart').getContext('2d');
-     const placementChart = new Chart(ctx, {
-       type: 'bar', // Bar chart
-       data: {
-         labels: companyNames,
-         datasets: [
-           {
-             label: 'Number of Students Placed',
-             data: studentsPlaced,
-             backgroundColor: 'rgba(75, 192, 192, 0.6)', // Light teal
-             borderColor: 'rgba(75, 192, 192, 1)',
-             borderWidth: 1
-           },
-           {
-             label: 'Package Offered (LPA)',
-             data: packagesOffered,
-             backgroundColor: 'rgba(255, 99, 132, 0.6)', // Light red
-             borderColor: 'rgba(255, 99, 132, 1)',
-             borderWidth: 1
-           }
-         ]
-       },
-       options: {
-         responsive: true,
-         plugins: {
-           legend: {
-             position: 'top'
-           },
-           tooltip: {
-             callbacks: {
-               label: function(tooltipItem) {
-                 const datasetLabel = tooltipItem.dataset.label || '';
-                 return `${datasetLabel}: ${tooltipItem.raw}`;
-               }
-             }
-           }
-         },
-         scales: {
-           x: {
-             beginAtZero: true,
-             title: {
-               display: true,
-               text: 'Company Name'
-             }
-           },
-           y: {
-             beginAtZero: true,
-             title: {
-               display: true,
-               text: 'Value'
-             }
-           }
-         }
-       }
-     });
-   </script>
-   <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th>No. of Students</th>
-          <th>Package in Lacs</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Adobe</td>
-          <td>1</td>
-          <td>47</td>
-        </tr>
-        <tr>
-          <td>PhonePe</td>
-          <td>2</td>
-          <td>33</td>
-        </tr>
-        <tr>
-          <td>BNY Mellon</td>
-          <td>2</td>
-          <td>21.64</td>
-        </tr>
-        <tr>
-          <td>Druva</td>
-          <td>2</td>
-          <td>20.1</td>
-        </tr>
-        <tr>
-          <td>Schlumberger</td>
-          <td>2</td>
-          <td>19.73</td>
-        </tr>
-        <tr>
-          <td>Deutsche Bank</td>
-          <td>3</td>
-          <td>19.63</td>
-        </tr>
-        <tr>
-          <td>BMC</td>
-          <td>4</td>
-          <td>14</td>
-        </tr>
-        <tr>
-          <td>ION</td>
-          <td>4</td>
-          <td>14</td>
-        </tr>
-        <tr>
-          <td>Tracelink</td>
-          <td>1</td>
-          <td>13.9</td>
-        </tr>
-        <tr>
-          <td>eQ Technologic</td>
-          <td>3</td>
-          <td>13.88</td>
-        </tr>
-        <tr>
-          <td>Barclays</td>
-          <td>19</td>
-          <td>13.7</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+        <!-- Placement Table -->
+        <h2>Placement Statistics</h2>
+        <canvas id="placementChart" width="800" height="400"></canvas>
 
-  <div class="placement-section">
-    <div class="placement-year">
-      <h2>2023-24 : <span class="placement-rate">60.08% Ongoing</span></h2>
-      <table class="placement-table">
-        <thead>
-          <tr>
-            <th>Program</th>
-            <th>Total Students</th>
-            <th>Above 5 Lac</th>
-            <th>Below 5 Lac</th>
-            <th>Total Placed</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>UG</td>
-            <td>248</td>
-            <td>144</td>
-            <td>5</td>
-            <td>149</td>
-          </tr>
-        </tbody>
-      </table>
+        <script>
+          // Data for the chart
+          const companyNames = [
+            "Adobe",
+            "PhonePe",
+            "BNY Mellon",
+            "Druva",
+            "Schlumberger",
+            "Deutsche Bank",
+            "BMC",
+            "ION",
+            "Tracelink",
+            "eQ Technologic",
+            "Barclays",
+          ];
 
+          const studentsPlaced = [1, 2, 2, 2, 2, 3, 4, 4, 1, 3, 19];
+          const packagesOffered = [
+            47, 33, 21.64, 20.1, 19.73, 19.63, 14, 14, 13.9, 13.88, 13.7,
+          ];
 
-      <h2>2022-23 : <span class="placement-rate">89.08% Ongoing</span></h2>
-      <table class="placement-table">
-        <thead>
-          <tr>
-            <th>Program</th>
-            <th>Total Students</th>
-            <th>Above 5 Lac</th>
-            <th>Below 5 Lac</th>
-            <th>Total Placed</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>UG</td>
-            <td>213</td>
-            <td>145</td>
-            <td>7</td>
-            <td>143</td>
-          </tr>
-        </tbody>
-      </table>
+          // Configuring the chart
+          const ctx = document
+            .getElementById("placementChart")
+            .getContext("2d");
+          const placementChart = new Chart(ctx, {
+            type: "bar", // Bar chart
+            data: {
+              labels: companyNames,
+              datasets: [
+                {
+                  label: "Number of Students Placed",
+                  data: studentsPlaced,
+                  backgroundColor: "rgba(75, 192, 192, 0.6)", // Light teal
+                  borderColor: "rgba(75, 192, 192, 1)",
+                  borderWidth: 1,
+                },
+                {
+                  label: "Package Offered (LPA)",
+                  data: packagesOffered,
+                  backgroundColor: "rgba(255, 99, 132, 0.6)", // Light red
+                  borderColor: "rgba(255, 99, 132, 1)",
+                  borderWidth: 1,
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: {
+                  position: "top",
+                },
+                tooltip: {
+                  callbacks: {
+                    label: function (tooltipItem) {
+                      const datasetLabel = tooltipItem.dataset.label || "";
+                      return `${datasetLabel}: ${tooltipItem.raw}`;
+                    },
+                  },
+                },
+              },
+              scales: {
+                x: {
+                  beginAtZero: true,
+                  title: {
+                    display: true,
+                    text: "Company Name",
+                  },
+                },
+                y: {
+                  beginAtZero: true,
+                  title: {
+                    display: true,
+                    text: "Value",
+                  },
+                },
+              },
+            },
+          });
+        </script>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>No. of Students</th>
+                <th>Package in Lacs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Adobe</td>
+                <td>1</td>
+                <td>47</td>
+              </tr>
+              <tr>
+                <td>PhonePe</td>
+                <td>2</td>
+                <td>33</td>
+              </tr>
+              <tr>
+                <td>BNY Mellon</td>
+                <td>2</td>
+                <td>21.64</td>
+              </tr>
+              <tr>
+                <td>Druva</td>
+                <td>2</td>
+                <td>20.1</td>
+              </tr>
+              <tr>
+                <td>Schlumberger</td>
+                <td>2</td>
+                <td>19.73</td>
+              </tr>
+              <tr>
+                <td>Deutsche Bank</td>
+                <td>3</td>
+                <td>19.63</td>
+              </tr>
+              <tr>
+                <td>BMC</td>
+                <td>4</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>ION</td>
+                <td>4</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>Tracelink</td>
+                <td>1</td>
+                <td>13.9</td>
+              </tr>
+              <tr>
+                <td>eQ Technologic</td>
+                <td>3</td>
+                <td>13.88</td>
+              </tr>
+              <tr>
+                <td>Barclays</td>
+                <td>19</td>
+                <td>13.7</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-      <h2>2021-22 : <span class="placement-rate">88.78% Ongoing</span></h2>
-      <table class="placement-table">
-        <thead>
-          <tr>
-            <th>Program</th>
-            <th>Total Students</th>
-            <th>Above 5 Lac</th>
-            <th>Below 5 Lac</th>
-            <th>Total Placed</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>UG</td>
-            <td>213</td>
-            <td>145</td>
-            <td>7</td>
-            <td>143</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+        <div class="placement-section">
+          <div class="placement-year">
+            <h2>
+              2023-24 : <span class="placement-rate">60.08% Ongoing</span>
+            </h2>
+            <table class="placement-table">
+              <thead>
+                <tr>
+                  <th>Program</th>
+                  <th>Total Students</th>
+                  <th>Above 5 Lac</th>
+                  <th>Below 5 Lac</th>
+                  <th>Total Placed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>UG</td>
+                  <td>248</td>
+                  <td>144</td>
+                  <td>5</td>
+                  <td>149</td>
+                </tr>
+              </tbody>
+            </table>
 
-    
-  
-    <!-- Repeat for other years -->
-  </div>
+            <h2>
+              2022-23 : <span class="placement-rate">89.08% Ongoing</span>
+            </h2>
+            <table class="placement-table">
+              <thead>
+                <tr>
+                  <th>Program</th>
+                  <th>Total Students</th>
+                  <th>Above 5 Lac</th>
+                  <th>Below 5 Lac</th>
+                  <th>Total Placed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>UG</td>
+                  <td>213</td>
+                  <td>145</td>
+                  <td>7</td>
+                  <td>143</td>
+                </tr>
+              </tbody>
+            </table>
 
-  <div class="average-package-box">
-    <div class="average-package-text">
-      Average Package: 13.56 L
-    </div>
-  </div>
-  
-</section>
+            <h2>
+              2021-22 : <span class="placement-rate">88.78% Ongoing</span>
+            </h2>
+            <table class="placement-table">
+              <thead>
+                <tr>
+                  <th>Program</th>
+                  <th>Total Students</th>
+                  <th>Above 5 Lac</th>
+                  <th>Below 5 Lac</th>
+                  <th>Total Placed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>UG</td>
+                  <td>213</td>
+                  <td>145</td>
+                  <td>7</td>
+                  <td>143</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
+          <!-- Repeat for other years -->
+        </div>
 
-<section id = "internships">
-  <h2 class="section-title">Internships Overview</h2>
-  <div class="internship-section">
-    <div class="internship-container">
-      <div class="internship-box">
-        <p class="internship-title">Highest Summer Internship Received</p>
-        <p class="internship-amount">75K</p>
-      </div>
-      <div class="internship-box">
-        <p class="internship-title">Total Internship Offers Received</p>
-        <p class="internship-amount">29*</p>
-      </div>
-    </div>
-    <p class="internship-note">*: ongoing</p>
-  </div>
-  <table class="internship-table">
-    <thead>
-      <tr>
-        <th>Sr No.</th>
-        <th>Company</th>
-        <th>No. of Students</th>
-        <th>Stipend</th>
-        
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Bajaj Byte Spark</td>
-        <td>5</td>
-        <td>20,000</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Barclays</td>
-        <td>6</td>
-        <td>75,000</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>BMC</td>
-        <td>9</td>
-        <td>8,000</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Mastercard</td>
-        <td>4</td>
-        <td>40,000</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Metro-GSC</td>
-        <td>3</td>
-        <td>10,000</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Tracelink</td>
-        <td>2</td>
-        <td>35,000</td>
-      </tr>
-      
-      
-    </tbody>
-  </table>
-</section>
+        <div class="average-package-box">
+          <div class="average-package-text">Average Package: 13.56 L</div>
+        </div>
+      </section>
 
-<section id = "projectdevelopment">
-  <div class="project-development-section">
-    <h2 class="section-title">Project Development</h2>
-    <div class="project-development-table">
-      <div class="project-development-row">
-        <div class="company-column">Company</div>
-        <div class="group-column">Groups</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">JyoSH AI Solutions Pvt Ltd</div>
-        <div class="group-column">3</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">Huf</div>
-        <div class="group-column">2</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">Algo Analytics Pvt Ltd</div>
-        <div class="group-column">1</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">Veritas</div>
-        <div class="group-column">8</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">Rajiv Gandhi Sci. & Tech. Commission, Govt. of Maharashtra</div>
-        <div class="group-column">1</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">University of Washington</div>
-        <div class="group-column">1</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">SnowDesign</div>
-        <div class="group-column">1</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">Carrot</div>
-        <div class="group-column">1</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">Innothoughts</div>
-        <div class="group-column">1</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">Shunya.Ek</div>
-        <div class="group-column">1</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">Web3Sheild</div>
-        <div class="group-column">1</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">Zepsys</div>
-        <div class="group-column">2</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">Databahn</div>
-        <div class="group-column">1</div>
-      </div>
-      <div class="project-development-row">
-        <div class="company-column">L3cube</div>
-        <div class="group-column">1</div>
-      </div>
-    </div>
-  </div>
-  
-</section>
+      <section id="internships">
+        <h2 class="section-title">Internships Overview</h2>
+        <div class="internship-section">
+          <div class="internship-container">
+            <div class="internship-box">
+              <p class="internship-title">Highest Summer Internship Received</p>
+              <p class="internship-amount">75K</p>
+            </div>
+            <div class="internship-box">
+              <p class="internship-title">Total Internship Offers Received</p>
+              <p class="internship-amount">29*</p>
+            </div>
+          </div>
+          <p class="internship-note">*: ongoing</p>
+        </div>
+        <table class="internship-table">
+          <thead>
+            <tr>
+              <th>Sr No.</th>
+              <th>Company</th>
+              <th>No. of Students</th>
+              <th>Stipend</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Bajaj Byte Spark</td>
+              <td>5</td>
+              <td>20,000</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Barclays</td>
+              <td>6</td>
+              <td>75,000</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>BMC</td>
+              <td>9</td>
+              <td>8,000</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Mastercard</td>
+              <td>4</td>
+              <td>40,000</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Metro-GSC</td>
+              <td>3</td>
+              <td>10,000</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Tracelink</td>
+              <td>2</td>
+              <td>35,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="projectdevelopment">
+        <div class="project-development-section">
+          <h2 class="section-title">Project Development</h2>
+          <div class="project-development-table">
+            <div class="project-development-row">
+              <div class="company-column">Company</div>
+              <div class="group-column">Groups</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">JyoSH AI Solutions Pvt Ltd</div>
+              <div class="group-column">3</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">Huf</div>
+              <div class="group-column">2</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">Algo Analytics Pvt Ltd</div>
+              <div class="group-column">1</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">Veritas</div>
+              <div class="group-column">8</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">
+                Rajiv Gandhi Sci. & Tech. Commission, Govt. of Maharashtra
+              </div>
+              <div class="group-column">1</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">University of Washington</div>
+              <div class="group-column">1</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">SnowDesign</div>
+              <div class="group-column">1</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">Carrot</div>
+              <div class="group-column">1</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">Innothoughts</div>
+              <div class="group-column">1</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">Shunya.Ek</div>
+              <div class="group-column">1</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">Web3Sheild</div>
+              <div class="group-column">1</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">Zepsys</div>
+              <div class="group-column">2</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">Databahn</div>
+              <div class="group-column">1</div>
+            </div>
+            <div class="project-development-row">
+              <div class="company-column">L3cube</div>
+              <div class="group-column">1</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div class="page-2 newspaper-theme">
-
         <h2 class="section-title">
           Activities Conducted from 1st July 2024 to 30th September 2024
         </h2>
@@ -477,7 +493,7 @@
             <h2 id="month-year">August 2024</h2>
             <button id="next-month">❯</button>
           </div>
-          
+
           <!-- Days of the week row -->
           <div class="days-row">
             <div>Sun</div>
@@ -488,9 +504,9 @@
             <div>Fri</div>
             <div>Sat</div>
           </div>
-          
+
           <div id="calendar-grid"></div>
-          
+
           <!-- Modal for Event Details -->
           <div id="event-modal" class="modal">
             <div class="modal-content">
@@ -514,7 +530,9 @@
             <img src="img/picture4.jpg" />
           </figure>
           <div class="gallery-text">
-            <h2>Department <span id="ITdept">of</span> Information Technology</h2>
+            <h2>
+              Department <span id="ITdept">of</span> Information Technology
+            </h2>
           </div>
           <figure class="gallery-item">
             <img src="img/picture6.jpg" />
@@ -529,118 +547,395 @@
             <img src="img/picture9.jpg" />
           </figure>
         </div>
+
+        <div class="articles-container">
+          <div class="article">
+          <!-- Article Header -->
+            <div class="article-header">
+            
+            <div class="article-title">
+              <h3>AWS Cloud Ideathon 2024</h3>
+             
+              <p>
+                <strong>Date:</strong> 20/09/2024 <br />
+                <strong>Time:</strong> 3:00 pm to 4:30 pm <br />
+                <strong>Resource Person:</strong> Jen Looper, Head of Academic
+                Advocacy at AWS, Boston, US
+              </p>
+            </div>
+          </div>
+
+          <!-- Introduction -->
+          <p class="intro">
+            <em>
+              Discovering the Future with Cloud: A Journey of Innovation and
+              Creativity at AWS Cloud Ideathon 2024 in PICT.
+            </em>
+          </p>
+
+          <!-- Main Content -->
+          <p>
+            The AWS Cloud Ideathon, organized by AWS Cloud Club PICT, was
+            successfully held on 20th September 2024 at Pune Institute of
+            Computer Technology. During the event, students presented their
+            innovative project ideas and competed for exciting prizes.
+          </p>
+         
+          <!-- Event Start Section -->
+          <h4>The Start of the Event</h4>
+          <p>
+            The event began with a captivating session by Jen Looper titled
+            <strong>"The Last Saree."</strong> She showcased the fascinating
+            intersection of Machine Learning (ML), Artificial Intelligence (AI),
+            and the cultural significance of India’s iconic garment—the saree.
+          </p>
+
+          <p>
+            Discussions revolved around how ML techniques could recognize
+            intricate patterns from sarees across regions and eras.
+            Additionally, Generative AI was explored for innovating modern saree
+            designs while honoring tradition.
+          </p>
+
+          <!-- Image 2 -->
+
+          <div class="article-image">
+            <img
+              src="saree-session-1.jpg"
+              alt="Jen Looper Session"
+              class="enhanced-image"
+            />
+            <p class="image-caption">
+              Jen Looper during her session "The Last Saree"
+            </p>
+          </div>
+          <!-- Competition Section -->
+          <h4>The Competition</h4>
+          <p>
+            After the session, the Ideathon began, with Jen Looper and Sambit
+            Bhattarai serving as the judges. Six teams presented their projects
+            in the finale, fostering new ideas with cloud computing at AWS Cloud
+            Club PICT.
+          </p>
+
+          <p>
+            <strong>Winning Teams:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Winning Team:</strong> AWS Credits worth USD 200 and AWS
+              Swags
+            </li>
+            <li>
+              <strong>First Runner-Up:</strong> AWS Credits worth USD 75 and AWS
+              Swags
+            </li>
+            <li>
+              <strong>Second Runner-Up:</strong> AWS Credits worth USD 50 and
+              AWS Swags
+            </li>
+          </ul>
+
+          <p class="acknowledgements">
+            Supported by <strong>Dr. Archana Ghotkar</strong> (Head of IT
+            Department), <strong>Rachna Chhajed Karnavat</strong> (Associate
+            Professor), and AWS Cloud Club PICT members, the event concluded
+            with inspiration and joyful memories.
+          </p>
+        </div>
+        <div class="article">
+          <!-- Article Header -->
+          <div class="article-header">
+            <div class="article-title">
+              <h3>Poster Presentation Competition for Third-Year Students</h3>
+              <p>
+                <strong>Date:</strong> 28/09/2024 <br />
+                <strong>Time:</strong> 10:00 am to 5:00 pm <br />
+                <strong>Reviewers:</strong> 
+                Mr. Swarup Godbole (Oracle); 
+                Mr. Ashish Mane (BNP Paribas); 
+                Mr. Ketan Kadam (HSBC Software); 
+                Mr. Vaibhav Tandale (Hexaware Technologies); 
+                Mr. Mahesh Yadav (UTS Global) <br />
+                <strong>Co-ordinators:</strong> Mr. Sachin Shelke, Mrs. Archana Kadam
+              </p>
+            </div>
+          </div>
         
+          <!-- Introduction -->
+          <p class="intro">
+            <em>Showcasing Innovation: A Thrilling Poster Presentation Competition at PICT Pune.</em>
+          </p>
+        
+          <!-- Main Content -->
+          <p>
+            The IT Department of Pune Institute of Computer Technology (PICT) recently organized a Poster Presentation Competition, where third-year students showcased their innovative ideas and research on topics like Artificial Intelligence, Machine Learning, and Blockchain. 
+          </p>
+        
+          <div class="article-image">
+            <img src="/img/Picture3.jpg" alt="Poster Presentation Competition" class="enhanced-image" />
+            <p class="image-caption">Students presenting their posters during the competition</p>
+          </div>
+          <!-- Competition Details -->
+          <h4>The Competition</h4>
+          <p>
+            The event provided a platform for students to present complex concepts visually. Posters were judged on clarity, originality, rigor, and appeal by an industry panel comprising experts from Oracle, BNP Paribas, HSBC, Hexaware, and UTS Global.
+          </p>
+        
+        
+          <h4>Winners of the Competition</h4>
+          <p>
+            <strong>Mr. Shreyas Shirwadkar</strong> won first prize for his poster on <strong>"Delivery Route Optimization."</strong> <strong>Mr. Atharva Raut</strong> and <strong>Ms. Unnati Rathi</strong> secured second and third prizes, respectively. Winners received certificates and prizes, with interactive Q&A sessions offering valuable feedback from judges.
+          </p>
+        
+          <!-- Acknowledgements -->
+          <p>
+            Organized by <strong>Mr. Sachin Shelke</strong>, <strong>Mrs. Archana Kadam</strong>, and their team, the event was a success under the guidance of <strong>Director Dr. P. T. Kulkarni</strong>, <strong>Principal Dr. S. T. Gandhe</strong>, and <strong>HoD IT Dr. Archana Ghotkar</strong>.
+          </p>
+        
+          <!-- Conclusion -->
+          <p>
+            Held annually, this competition encourages students to innovate and contribute to the research landscape.
+          </p>
+          <div class="article-image">
+            <img src="/img/Picture15.jpg" alt="Poster Presentation Competition" class="enhanced-image" />
+            <p class="image-caption">Students presenting their posters during the competition</p>
+          </div>
+        </div>
         
         
         <div class="article">
           <!-- Article Header -->
           <div class="article-header">
-            <img
-              src="saree-session.jpg"
-              alt="AWS Event Snapshot"
-              class="article-image-large"
-            />
             <div class="article-title">
-              <h3>AWS Cloud Ideathon 2024</h3>
+              <h3>Debate Competition for SE Students</h3>
               <p>
-                <strong>Date:</strong> 20/09/2024 <br />
-                <strong>Time:</strong> 3:00 pm to 4:30 pm <br />
-                <strong>Resource Person:</strong> Jen Looper, Head of Academic Advocacy at AWS, Boston, US
+                <strong>Date:</strong> 19th - 20th September 2024 (4:00 pm to 5:00 pm) <br />
+                <strong>Coordinators:</strong> Mrs. D. P. Salapurkar, Mrs. J. H. Jadhav, 
+                Mr. V. R. Tribhuvan, Mrs. A. S. Kadam, Ms. A. G. Ghule
               </p>
             </div>
           </div>
-          
+          <div class="article-image">
+            <img src="/img/Picture10.jpg" alt="Debate Competition" class="enhanced-image" />
+            <p class="image-caption">Students presenting their posters during the competition</p>
+          </div>
           <!-- Introduction -->
-          <p class="intro">
-            <em>
-              Discovering the Future with Cloud: A Journey of Innovation and Creativity at AWS Cloud Ideathon 2024 in PICT.
-            </em>
-          </p>
-      
-          <!-- Main Content -->
           <p>
-            The AWS Cloud Ideathon, organized by AWS Cloud Club PICT, was successfully held on 20th September 2024 at Pune Institute of Computer Technology. During the event, students presented their innovative project ideas and competed for exciting prizes.
+            The Department of Information Technology at PICT Pune organized an engaging "Debate Competition" for second-year students on 19th and 20th September 2024. Held under the Soft Skills course, the competition aimed to develop students' critical thinking, communication, and argumentation skills.
           </p>
-      
-          <!-- Event Start Section -->
-          <h4>The Start of the Event</h4>
-          <p>
-            The event began with a captivating session by Jen Looper titled <strong>"The Last Saree."</strong> She showcased the fascinating intersection of Machine Learning (ML), Artificial Intelligence (AI), and the cultural significance of India’s iconic garment—the saree.
-          </p>
-      
-          <p>
-            Discussions revolved around how ML techniques could recognize intricate patterns from sarees across regions and eras. Additionally, Generative AI was explored for innovating modern saree designs while honoring tradition.
-          </p>
-      
-          <!-- Image 2 -->
-          
-          <div class="centered-image">
-            <img src="saree-session-1.jpg" alt="Jen Looper Session" class="enhanced-image" />
-            <p class="image-caption">Jen Looper during her session "The Last Saree"</p>
-          </div>
-          <!-- Competition Section -->
-          <h4>The Competition</h4>
-          <p>
-            After the session, the Ideathon began, with Jen Looper and Sambit Bhattarai serving as the judges. Six teams presented their projects in the finale, fostering new ideas with cloud computing at AWS Cloud Club PICT.
-          </p>
-      
-          <p>
-            <strong>Winning Teams:</strong>
-          </p>
-          <ul>
-            <li><strong>Winning Team:</strong> AWS Credits worth USD 200 and AWS Swags</li>
-            <li><strong>First Runner-Up:</strong> AWS Credits worth USD 75 and AWS Swags</li>
-            <li><strong>Second Runner-Up:</strong> AWS Credits worth USD 50 and AWS Swags</li>
-          </ul>
-          
-          <!-- Image 2 -->
-          <div class="grid-image-1">
-            <div class="side-image">
-                <img src="winners.jpg" alt="Winners of AWS Ideathon" />
-                <p class="image-caption">Winners of AWS Cloud Ideathon 2024</p>
-              </div>
-            <div class="side-image">
-              <img src="saree-session-2.jpg" alt="Ideathon Finalists" class="enhanced-image" />
-              <p class="image-caption">Finalists presenting their projects</p>
-            </div>
-          </div>
-          <!-- Acknowledgements -->
-          <p class="acknowledgements">
-            Supported by <strong>Dr. Archana Ghotkar</strong> (Head of IT Department), <strong>Rachna Chhajed Karnavat</strong> (Associate Professor), and AWS Cloud Club PICT members, the event concluded with inspiration and joyful memories.
-          </p>
-        </div>
-        <button id="bt1">Useless button</button>
-      </div>
-      <div class="about-us">
-        <header class="header">
-            <h1>About Us</h1>
-        </header>
         
-        <div class="content">
-            <div class="member">
-                <img src="https://via.placeholder.com/150" alt="Dev Taneja">
-                <h2>Dev Taneja</h2>
-                <a href="http://linkedin.com/in/dev-taneja-57625327b" target="_blank">LinkedIn Profile</a>
-            </div>
+          <!-- Competition Details -->
+          <p>
+            A pre-competition registration process was conducted via Google Forms, with 39 students signing up to participate. Based on the registrations, 10 teams were formed, and 6 teams attended the first round held on 19th September 2024. Judges evaluated the participants based on predefined criteria and shortlisted 3 teams for the second and final round, conducted on 20th September 2024.
+          </p>
+        
+          <h4>Objectives of the Debate Competition:</h4>
+          <ul>
+            <li>Foster critical thinking and analytical abilities.</li>
+            <li>Improve public speaking and persuasive communication skills.</li>
+            <li>Encourage research and evidence-based arguments.</li>
+            <li>Promote teamwork and collaboration in team-based formats.</li>
+          </ul>
+          <div class="article-image">
+            <img src="/img/Picture11.jpg" alt="Debate Competition" class="enhanced-image" />
+            <p class="image-caption">Students presenting their posters during the competition</p>
+          </div>
+          <!-- Conclusion -->
+          <p>
+            The event, meticulously coordinated by Mrs. D. P. Salapurkar and her team, was a platform for students to hone their soft skills, preparing them for future academic and professional endeavors.
+          </p>
 
-            <div class="member">
-                <img src="https://via.placeholder.com/150" alt="Mahi Shah">
-                <h2>Mahi Shah</h2>
-                <a href="http://linkedin.com/in/mahi-shah-417975212" target="_blank">LinkedIn Profile</a>
+          <div class="article-header">
+            <div class="article-title">
+              <h3>Technical Dumb Charades</h3>
+              <p>
+                <strong>Date:</strong> 13th September 2024 <br />
+                <strong>Subject:</strong> Machine Learning <br />
+                <strong>Co-ordinator:</strong> Dr. A.S. Ghotkar
+              </p>
             </div>
+          </div>
+        
+          <!-- Event Overview -->
+          <p>
+            As part of "Paperless Day," the event "Technical Dumb Charades" was organized to foster creative learning and engagement among students. Focused on the subject of Machine Learning, the activity provided an interactive platform for participants to showcase their understanding of technical concepts in an entertaining and collaborative manner.
+          </p>
+        </div>
+        
+
+
+
+        <div class="article">
+          <!-- Article Header -->
+          <div class="article-header">
+            <div class="article-title">
+              <h3>Expert Session on Stress Management and Meditation for SE Students</h3>
+              <p>
+                <strong>Date:</strong> 6th September 2024 <br />
+                <strong>Coordinators:</strong> Mrs. D. P. Salapurkar, Mrs. J. H. Jadhav, 
+                Mr. V. R. Tribhuvan, Mrs. A. S. Kadam, Ms. A. G. Ghule <br />
+                <strong>Organized by:</strong> Department of Information Technology, PICT Pune <br />
+                <strong>Speaker:</strong> Mrs. Sneha S. Gachake, Certified Yoga Trainer and Counsellor <br />
+                <strong>Mode of Conduction:</strong> Online (MS Teams: <a href="https://msteams.link/5LHH">Join Here</a>)
+              </p>
+            </div>
+          </div>
+        
+          <!-- Session Overview -->
+          <p>
+            On 6th September 2024, the Department of Information Technology at PICT Pune hosted an engaging online session on "Stress Management and Meditation" for second-year students. Led by Mrs. Sneha S. Gachake, the session aimed to create awareness about the benefits of yoga for achieving a peaceful mind and body, managing stress, and reducing anxiety.
+          </p>
+        
+          <!-- Key Points Discussed -->
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li>Understanding the importance of yoga for stress relief and mental clarity.</li>
+            <li>Practical techniques for managing anxiety and improving focus during studies.</li>
+            <li>Building confidence by presenting skills and experiences effectively.</li>
+          </ul>
+          <div class="article-image">
+            <img src="/img/Picture12.jpg" alt="Steess Management " class="enhanced-image" />
+            <p class="image-caption">Students presenting their posters during the competition</p>
+          </div>
+          <!-- Interactive Q&A -->
+          <p>
+            The session concluded with an interactive Q&A segment where students shared their challenges related to stress and concentration. Mrs. Sneha S. Gachake provided tailored advice and actionable strategies to help students overcome these issues.
+          </p>
+        
+          <!-- Feedback and Conclusion -->
+          <p>
+            The workshop received highly positive feedback from participants, who appreciated the practical insights and techniques shared by Mrs. Sneha S. Gachake. The session not only enhanced students' understanding of stress management but also empowered them to apply these methods in their daily lives.
+          </p>
+
+
+          
+          
+        </div>
+        <div class="article">
+          <!-- Article Header -->
+          <div class="article-header">
+            <div class="article-title">
+              <h3>Online Expert Session on “Resume Writing” for SE Students</h3>
+              <p>
+                <strong>Date:</strong> 12th August 2024 (4:00 PM to 5:00 PM) <br />
+                <strong>Organized by:</strong> SSL Team, Department of Information Technology, PICT Pune <br />
+                <strong>Speaker:</strong> Dr. Tanaya Patil, Career Counsellor and Professional Development Expert <br />
+                <strong>Mode of Conduction:</strong> Online
+              </p>
+            </div>
+          </div>
+        
+          <!-- Session Overview -->
+          <p>
+            On 12th August 2024, the Department of Information Technology at PICT Pune hosted an engaging online session on "Resume Writing" for second-year students. Conducted by Dr. Tanaya Patil, a seasoned career counsellor, the workshop aimed to equip students with the skills to craft compelling resumes that enhance their employability in today’s competitive job market.
+          </p>
+        
+          <!-- Key Points Discussed -->
+          <h4>Key Highlights:</h4>
+          <ul>
+            <li><strong>Showcasing Skills and Competencies:</strong> Strategies for effectively presenting personal strengths.</li>
+            <li><strong>Detailing Professional Experience:</strong> Tips for structuring and emphasizing internships, projects, and work experience.</li>
+            <li><strong>Highlighting Education:</strong> Guidelines for listing academic achievements and certifications.</li>
+          </ul>
+          <div class="article-image">
+            <img src="/img/Picture13.jpg" alt="Poster Presentation Competition" class="enhanced-image" />
+            <p class="image-caption">Students presenting their posters during the competition</p>
+          </div>
+          <!-- Interactive Q&A -->
+          <p>
+            The session concluded with an interactive Q&A segment where students voiced their concerns about common challenges in resume writing, such as addressing employment gaps, incorporating internships, and crafting strong objective statements. Dr. Tanaya Patil provided personalized advice and practical solutions, ensuring students left with actionable insights.
+          </p>
+        
+          <!-- Feedback and Conclusion -->
+          <p>
+            The workshop garnered highly positive feedback from attendees, who appreciated the depth of information and actionable tips provided. Students noted a significant boost in their confidence to present their skills, experiences, and achievements effectively to potential employers.
+          </p>
+        </div>
+        
+        <div class="article">
+          <!-- Article Header -->
+          <div class="article-header">
+            <div class="article-title">
+              <h3>AlgoMania: Unleashing the Algorithmic Frenzy</h3>
+              <p>
+                <strong>Date:</strong> 10th July 2024 - 31st July 2024 <br />
+                <strong>Co-ordinators:</strong> Mrs. Sumitra A. Jakhete, Ms. Prajkta Shinde, Mr. Vineet Tribhuvan
+              </p>
+            </div>
+          </div>
+        
+          <!-- Objectives -->
+          <h4>Objectives:</h4>
+          <ul>
+            <li>To build momentum toward achieving greater competitive programming & DSA goals.</li>
+            <li>To find strong core motivation to solve problems daily and progress in the journey of DSA.</li>
+            <li>To be ready for the internship season within one month.</li>
+            <li>To build strong logical and syntactical superiority to compete with peers and work as a team.</li>
+          </ul>
+        
+          <!-- Event Overview -->
+          <p>
+            <strong>Algomania:</strong> A month-long July-August TE IT Classes LeetCode competition.
+          </p>
+          <p>
+            In this competition, students had to solve DSA, DAA, and algorithm problems on the LeetCode platform. Based on their performance, they were allotted points according to the points system. Students competed in groups, and the rules for group formation had been circulated. The points were recorded in an Excel sheet dedicated to each group, and only the group lead was given access to this sheet. Additionally, the DAA faculty provided a few problem statements from LeetCode, related to topics learned in class, which carried points as well.
+          </p>
+        
+          <!-- Conclusion -->
+          <p>
+            Algomania is a long-term coding competition developed to test the algorithmic and coding skills of the participants. It serves as a habit-building competition that encourages students to code regularly over a long interval.
+          </p>
+          <div class="article-image">
+            <img src="/img/Picture14.jpg" alt="Poster Presentation Competition" class="enhanced-image" />
+            <p class="image-caption">Students presenting their posters during the competition</p>
+          </div>
+        </div>
+        
+      </div>
+      <button id="bt1">Useless button</button>
+    </div>
+    
+
+
+    <div class="about-us">
+      <header class="header">
+        <h1>About Us</h1>
+      </header>
+
+      <div class="content">
+        <div class="member">
+          <img src="https://via.placeholder.com/150" alt="Dev Taneja" />
+          <h2>Dev Taneja</h2>
+          <a href="http://linkedin.com/in/dev-taneja-57625327b" target="_blank"
+            >LinkedIn Profile</a
+          >
         </div>
 
-        <div class="teacher-section">
-            <img src="https://via.placeholder.com/150" alt="Dr. J B Jagdale">
-            <h2>Dr. J B Jagdale</h2>
-            <a href="http://linkedin.com/in/dr-jayashree-balaso-j-19ba9716" target="_blank">LinkedIn Profile</a>
+        <div class="member">
+          <img src="https://via.placeholder.com/150" alt="Mahi Shah" />
+          <h2>Mahi Shah</h2>
+          <a href="http://linkedin.com/in/mahi-shah-417975212" target="_blank"
+            >LinkedIn Profile</a
+          >
         </div>
+      </div>
 
-        <footer class="footer">
-            <p>&copy; 2025 Our Team. All Rights Reserved.</p>
-        </footer>
+      <div class="teacher-section">
+        <img src="https://via.placeholder.com/150" alt="Dr. J B Jagdale" />
+        <h2>Dr. J B Jagdale</h2>
+        <a
+          href="http://linkedin.com/in/dr-jayashree-balaso-j-19ba9716"
+          target="_blank"
+          >LinkedIn Profile</a
+        >
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2025 Our Team. All Rights Reserved.</p>
+      </footer>
     </div>
 
-      <script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
