@@ -1,4 +1,25 @@
 const events = {
+  "2024-07-13": {
+    name: "BE-Orientation Session",
+    description:
+      "The Objective of the session was to understand Project activities, Research Paper writing , tools techniques for project management",
+    color: "rgba(71, 215, 255, 0.6)", // Tomato Red with transparency
+  },
+
+  "2024-07-27": {
+    name: "Expert session on tools and techniques on Project Development and Management",
+    description:
+      "The Objective of the session was to get familiar with Project development and management,and get familiar with tools like Jira, Agile etc.",
+    color: "rgba(255, 71, 212, 0.6)", // Tomato Red with transparency
+  },
+
+  "2024-07-31": {
+    name: "Training Session on 'Get ready for placements'",
+    description:
+      "The Objective was to create awareness about the placement and internship process , to provide guidance for Interview prepration, amcat and aptitude tests , and inspire students to take proactive steps to achieve thier future goals",
+    color: "rgba(71, 255, 77, 0.6)", // Tomato Red with transparency
+  },
+
   "2024-08-12": {
     name: "Resume Writing",
     description:
@@ -15,6 +36,29 @@ const events = {
     description: "A sports event at the zonal level.",
     color: "rgba(34, 193, 195, 0.6)", // Turquoise with transparency
   },
+
+  "2024-09-20": {
+    name: "OOP Challenge quest : An OOP coding Competition ",
+    description:
+      "The session focuses on familiarizing students with HackerRank, improving their coding challenge skills, and preparing them for competitive programming and future career opportunities. ",
+    color: "rgba(253, 72, 72, 0.6)", // Tomato Red with transparency
+  },
+
+
+  "2024-09-21": {
+    name: "Session on Cracking Internships and  Placements : A strategic Guide ",
+    description:
+      "The Objective was to inspire and motive students through various success stories and provide insights into how to fetch into the job opportunities",
+    color: "rgba(71, 255, 77, 0.6)", // Tomato Red with transparency
+  },
+
+  "2024-09-24": {
+    name: "Expert session on Quality Research Publication techniques",
+    description:
+      "The Objective of the session was to understand  Research Paper writing, tools and techniques for project management",
+    color: "rgba(255, 71, 212, 0.6)", // Tomato Red with transparency
+  },
+
   "2024-10-03": {
     name: "Career in VLSI",
     description: "A session on career opportunities in VLSI.",
@@ -46,7 +90,7 @@ const eventDescription = document.getElementById("event-description");
 
 // Disable navigation before August or after December 2024
 const updateNavButtons = () => {
-  prevMonthBtn.disabled = currentYear === 2024 && currentMonth === 7;
+  prevMonthBtn.disabled = currentYear === 2024 && currentMonth === 6;
   nextMonthBtn.disabled = currentYear === 2024 && currentMonth === 11;
 };
 

@@ -736,10 +736,12 @@ tr:hover {
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .content {
+@media (max-width: 768px) 
+{
+  .content 
+  {
       flex-direction: column;
-      align-items: center;
-      }
+      align-items:center;
+  }
 }
 
