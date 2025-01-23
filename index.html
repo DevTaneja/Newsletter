@@ -137,7 +137,7 @@
           {
             label: "Package Offered (LPA)", // Label for the dataset
             data: packagesOffered, // Data for the packages
-            backgroundColor: "rgba(75, 192, 192, 0.6)", // Light teal color
+            backgroundColor: "rgba(75, 192, 192, 0.5)", // Light teal color
             borderColor: "rgba(75, 192, 192, 1)", // Teal border color
             borderWidth: 1, // Border thickness
           },
@@ -145,7 +145,7 @@
       },
       options: {
         animation: {
-          duration: 2000, // Animation duration in milliseconds
+          duration: 1000, // Animation duration in milliseconds
           easing: "easeInOutQuad", // Easing function
         },
         responsive: true, // Chart resizes to fit the container
@@ -167,6 +167,11 @@
             title: {
               display: true,
               text: "Company Name", // X-axis title
+            },
+            ticks: {
+              maxRotation: 0, // Prevent label rotation
+              minRotation: 0, // Prevent label rotation
+              autoSkip: false, // Show all labels even if there’s limited space
             },
           },
           y: {
@@ -197,10 +202,11 @@
     }
   );
 
-  // Observe the canvas element
-  const chartElement = document.getElementById("placementChart");
-  observer.observe(chartElement);
+  // Attach the observer to the canvas element
+  const chartCanvas = document.getElementById("placementChart");
+  observer.observe(chartCanvas);
 </script>
+
 
          <div class="table-container">
           <table id="placements-table">
