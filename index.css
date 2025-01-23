@@ -43,15 +43,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 ,ul{
   font-family: "Georgia", serif;
   color: #222; /* Slightly darker for emphasis */
 }
 .heading{
   display: flex;
+  flex-direction: column;
   justify-content: left;
-  padding:4px;
-  gap:0px
+  padding:0px;
+  margin: 0px;
+  gap:0px;
 }
 
 #SCTR{
@@ -63,6 +65,8 @@ h1 {
   font-size: 70px;
   /* text-align: center; */
   padding: 0px;
+  margin: 0px;
+  line-height: 12vmin;
 }
 
 h2 {
@@ -152,7 +156,10 @@ p {
   padding: 10px;
   /* display:flex; */
 }
-
+.article p ,h2,ul
+{
+  line-height: 5.1vmin;
+}
 .article-title h3 {
   font-size: 1.7rem;
 }
@@ -283,6 +290,7 @@ p {
   margin: 40px 0;
   text-align: center;
 }
+
 
 .section-title {
   font-family: "Times New Roman", serif;

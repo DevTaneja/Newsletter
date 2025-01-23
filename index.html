@@ -102,91 +102,106 @@
         <h2>Placement Statistics</h2>
         <canvas id="placementChart" width="800" height="400"></canvas>
 
-        <script>
-          // Data for the chart
-          const companyNames = [
-            "Adobe",
-            "PhonePe",
-            "BNY Mellon",
-            "Druva",
-            "Schlumberger",
-            "Deutsche Bank",
-            "BMC",
-            "ION",
-            "Tracelink",
-            "eQ Technologic",
-            "Barclays",
-          ];
+<script>
+  // Data for the chart
+  const companyNames = [
+    "PhonePe",
+    "Arista",
+    "BNY Mellon",
+    "ION",
+    "Ittiam Systems Pvt Ltd",
+    "BMC",
+    "ZS Associates",
+    "MasterCard",
+    "Barclays",
+    "ACI Worldwide",
+    "HSBC",
+    "Merilytics",
+  ];
 
-          const studentsPlaced = [1, 2, 2, 2, 2, 3, 4, 4, 1, 3, 19];
-          const packagesOffered = [
-            47, 33, 21.64, 20.1, 19.73, 19.63, 14, 14, 13.9, 13.88, 13.7,
-          ];
+  const packagesOffered = [
+    33.54, 29.44, 21.64, 17.3, 16, 14, 13.65, 13.6, 13, 12.3, 9, 8.5,
+  ];
 
-          // Configuring the chart
-          const ctx = document
-            .getElementById("placementChart")
-            .getContext("2d");
-          const placementChart = new Chart(ctx, {
-            type: "bar", // Bar chart
-            data: {
-              labels: companyNames,
-              datasets: [
-                {
-                  label: "Number of Students Placed",
-                  data: studentsPlaced,
-                  backgroundColor: "rgba(75, 192, 192, 0.6)", // Light teal
-                  borderColor: "rgba(75, 192, 192, 1)",
-                  borderWidth: 1,
-                },
-                {
-                  label: "Package Offered (LPA)",
-                  data: packagesOffered,
-                  backgroundColor: "rgba(255, 99, 132, 0.6)", // Light red
-                  borderColor: "rgba(255, 99, 132, 1)",
-                  borderWidth: 1,
-                },
-              ],
-            },
-            options: {
-                  animation: 
-                  {
+  // Create the chart but keep it uninitialized initially
+  let placementChart = null;
+
+  // Function to initialize the chart
+  const initializeChart = () => {
+    const ctx = document.getElementById("placementChart").getContext("2d");
+    placementChart = new Chart(ctx, {
+      type: "bar", // Bar chart
+      data: {
+        labels: companyNames, // Company names on the x-axis
+        datasets: [
+          {
+            label: "Package Offered (LPA)", // Label for the dataset
+            data: packagesOffered, // Data for the packages
+            backgroundColor: "rgba(75, 192, 192, 0.6)", // Light teal color
+            borderColor: "rgba(75, 192, 192, 1)", // Teal border color
+            borderWidth: 1, // Border thickness
+          },
+        ],
+      },
+      options: {
+        animation: {
           duration: 2000, // Animation duration in milliseconds
-          easing: 'easeInOutQuad' // Easing function
+          easing: "easeInOutQuad", // Easing function
         },
-              responsive: true,
-              plugins: {
-                legend: {
-                  position: "top",
-                },
-                tooltip: {
-                  callbacks: {
-                    label: function (tooltipItem) {
-                      const datasetLabel = tooltipItem.dataset.label || "";
-                      return `${datasetLabel}: ${tooltipItem.raw}`;
-                    },
-                  },
-                },
-              },
-              scales: {
-                x: {
-                  beginAtZero: true,
-                  title: {
-                    display: true,
-                    text: "Company Name",
-                  },
-                },
-                y: {
-                  beginAtZero: true,
-                  title: {
-                    display: true,
-                    text: "Value",
-                  },
-                },
+        responsive: true, // Chart resizes to fit the container
+        plugins: {
+          legend: {
+            position: "top", // Position of the legend
+          },
+          tooltip: {
+            callbacks: {
+              label: function (tooltipItem) {
+                return `Package Offered: ${tooltipItem.raw} LPA`;
               },
             },
-          });
-        </script>
+          },
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: "Company Name", // X-axis title
+            },
+          },
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: "Package Offered (LPA)", // Y-axis title
+            },
+          },
+        },
+      },
+    });
+  };
+
+  // Using the Intersection Observer to detect when the chart becomes visible
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // If the chart is visible, initialize the chart and stop observing
+          initializeChart();
+          observer.disconnect(); // Stop observing after the animation starts
+        }
+      });
+    },
+    {
+      threshold: 0.5, // Trigger when at least 50% of the chart is visible
+    }
+  );
+
+  // Observe the canvas element
+  const chartElement = document.getElementById("placementChart");
+  observer.observe(chartElement);
+</script>
+
          <div class="table-container">
           <table id="placements-table">
               <thead>
