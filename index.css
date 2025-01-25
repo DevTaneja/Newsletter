@@ -284,49 +284,188 @@ p {
   line-height: 1.6;
   margin: 20px;
 }
-
-/* Placements Section Styles */
-#placements {
+/* Toppers Section */
+.toppers-section {
   margin: 40px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+/* Section Title */
+.section-title {
+  font-family: "Times New Roman", serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Toppers Section */
+.toppers-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-family: "Times New Roman", serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Toppers Section */
+.toppers-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
 .section-title {
   font-family: "Times New Roman", serif;
   font-size: 2.5rem;
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
+.congrats-message {
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.branch-title {
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.toppers-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.topper-box {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 150px; /* Set fixed width */
+  height: 220px; /* Set fixed height */
+}
+
+.topper-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.topper-photo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.topper-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.topper-name {
+  font-family: "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.topper-marks {
+  font-family: "Georgia", serif;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+
+
+/* Placements Section Styles */
+/* Placements Section Styles */
+#placements {
+  margin: 40px 0;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4); /* Glassy effect */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.section-title {
+  font-family: "Times New Roman", serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Flex Container for Stats */
 .flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 80px;
   margin-bottom: 20px;
 }
 
+/* Highest Package Box */
 .highest-package-box {
-  background-color: rgba(
-    230,
-    230,
-    250,
-    0.8
-  ); /* Match the theme's transparency */
+  background-color: rgba(255, 255, 255, 0.4); /* Glassy semi-transparent */
   padding: 20px;
-  border: 2px solid #333;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   max-width: 300px;
   text-align: center;
 }
 
 .highest-package-title {
-  font-family: "Georgia", serif;
+  font-family: "Times New Roman", serif;
   font-size: 1.5em;
   font-weight: bold;
-  color: #222;
+  color: #333;
   margin-bottom: 10px;
 }
 
@@ -335,11 +474,12 @@ p {
   color: #555;
 }
 
+/* Picture Box */
 .picture-box {
   width: 200px;
   height: 200px;
-  background-color: #f0f0f0;
-  border: 2px solid #333;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -350,16 +490,17 @@ p {
   object-fit: cover;
 }
 
+/* Name and Company Box */
 .name-company-box {
-  background-color: rgba(230, 230, 250, 0.8);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 10px;
-  border: 2px solid #333;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   max-width: 220px;
   margin-top: 10px;
   text-align: center;
   font-size: 2rem;
-  color: #2a2a2a;
+  color: #333;
   margin-bottom: 20px;
 }
 
@@ -383,7 +524,6 @@ p {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
-  max-width: 800px;
   overflow-x: auto;
 }
 
@@ -391,15 +531,16 @@ p {
 table {
   width: 100%;
   border-collapse: collapse;
+  color: #222;
 }
 
 /* Table Headers and Data */
 th,
 td {
   padding: 15px;
-  text-align: left;
-  font-family: "Arial", sans-serif;
-  color: #000;
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  color: #333;
 }
 
 th {
@@ -416,39 +557,33 @@ tr:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+/* Placement-Specific Table */
 #placements-table {
   width: 100%;
   margin: 20px 0;
   border-collapse: collapse;
-  backdrop-filter: blur(10px); /* Apply blur effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari support */
-  background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* White border with 50% opacity */
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 #placements-table th,
 #placements-table td {
-  border: 1px solid rgba(255, 255, 255, 0.5); /* White border with 50% opacity */
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 10px;
-  text-align: center;
-  color: white; /* White text color for contrast */
+  color: #333;
 }
 
 #placements-table th {
-  background-color: rgba(0, 0, 0, 0.8); /* Darker black for header */
+  background-color: rgba(255, 255, 255, 0.8);
   font-weight: bold;
 }
 
 #placements-table tr:nth-child(even) {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* Light black for alternate rows */
+  background-color: rgba(255, 255, 255, 0.6);
 }
-.placement-section {
-  padding: 20px;
+
+#placements-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .placement-year {
@@ -459,42 +594,10 @@ tr:hover {
 .placement-year h2 {
   font-size: 1.5em;
   font-weight: bold;
-  color: black; /* Change to black */
+  color: #333;
   margin-bottom: 10px;
-  text-align: left;
 }
 
-/* Update the placement table styling to match the previous table */
-.placement-table {
-  width: 100%;
-  border-collapse: collapse;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.4); /* Adjusted background color */
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  color: black; /* Change text color to black */
-  margin-bottom: 20px;
-}
-
-.placement-table th,
-.placement-table td {
-  border: 1px solid rgba(255, 255, 255, 0.5); /* Border to match previous table */
-  padding: 10px;
-  text-align: center;
-}
-
-.placement-table th {
-  background-color: rgba(255, 255, 255, 0.8); /* Header background color */
-  font-weight: bold;
-}
-
-.placement-table tbody tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.6); /* Even rows background color */
-}
-
-.placement-table tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.8); /* Hover effect for rows */
-}
 
 /* Average Package Box */
 .average-package-box {
