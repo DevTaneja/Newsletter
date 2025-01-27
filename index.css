@@ -119,8 +119,10 @@ p {
 }
 .Grid{
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
+  gap: 5rem;
 }
 .text-container {
   display: grid;
