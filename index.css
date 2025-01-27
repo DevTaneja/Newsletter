@@ -117,12 +117,19 @@ p {
   height: auto;
   margin: 0px;
 }
+.index{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .Grid{
   display: grid;
-  align-items: center;
+  justify-content:center;
+  /* align-items: center; */
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
   gap: 5rem;
+  font-size: 1.4rem;
 }
 .text-container {
   display: grid;
