@@ -290,6 +290,81 @@ p {
   line-height: 1.6;
   margin: 20px;
 }
+
+/* HoD & Newsletter Section */
+.hod-message {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.hod-message h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  font-family: "Times New Roman", serif;
+  margin-bottom: 20px;
+}
+
+/* Message Boxes */
+.message-box {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 40px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.3rem;
+  line-height: 1.8;
+  max-width: 900px;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Circular Images for HoD & Newsletter In-charge */
+.profile-image {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .message-box {
+      padding: 25px;
+      font-size: 1rem;
+  }
+
+  .profile-image {
+      width: 60px;
+      height: 60px;
+  }
+}
+
+
 /* Toppers Section */
 .toppers-section {
   margin: 40px 0;
