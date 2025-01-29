@@ -124,9 +124,22 @@ p {
   margin: 2rem;
 }
 #indexx{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-size: 2.8rem;
   margin: 2rem;
   margin-bottom: 4rem;
+
+}
+.Gallery-2{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+
+}
+.Gallery-2-big{
+  max-width: 80%;
 }
 .Grid a{
   text-decoration: none;
@@ -745,6 +758,10 @@ tr:hover {
 
 
 .student-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.student-box-1:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
