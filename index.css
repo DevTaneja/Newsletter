@@ -1340,6 +1340,9 @@ tr:hover {
 /* Mobile View */
 @media (max-width: 480px) {
   body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
   }
   .container{
@@ -1348,18 +1351,19 @@ tr:hover {
 
   h1 {
     font-size: 32px;
-    line-height: 8vmin;
+    line-height: 9vmin;
     letter-spacing: -0.3px;
   }
 
   h2 {
+    line-height: 9vmin;
     font-size: 18px;
     letter-spacing: -0.2px;
   }
 
   p {
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 1.4;
   }
 
   .Gallery-2 {
@@ -1371,7 +1375,7 @@ tr:hover {
   }
 
   .Grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0.8rem;
     font-size: 1rem;
   }
