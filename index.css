@@ -564,11 +564,11 @@ p {
 #placements {
   margin: 40px 0;
   text-align: center;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.4); /* Glassy effect */
+  padding: 15px;
+  /* background-color: rgba(255, 255, 255, 0.4); Glassy effect */
   border-radius: 10px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
+  /* -webkit-backdrop-filter: blur(10px); */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -1264,7 +1264,7 @@ tr:hover {
 /* Tablet View */
 @media (max-width: 768px) {
   body {
-    padding: 6px;
+    padding: 16px;
   }
 
   h1 {
@@ -1339,11 +1339,26 @@ tr:hover {
 
 /* Mobile View */
 @media (max-width: 480px) {
+  .image-container 
+  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    /* width: fit-content; */
+    height: fit-content;
+  }
+  .image-container img{
+    
+    width: 100%;
+    height: auto;
+    display: block;
+  }
   body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
+    padding: 16px;
   }
   .container{
     padding:1rem;
