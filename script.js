@@ -185,3 +185,6 @@ bt1.onclick = () => {
     "Please don't waste your time in doing useless things.\nInstead, do something useful and productive."
   );
 };
+
+
+let hide = document.querySelector(".hide");
