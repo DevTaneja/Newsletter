@@ -182,9 +182,7 @@ let div = document.querySelector("#bt1");
 // Add an onclick event listener
 bt1.onclick = () => {
   alert(
-    "Please don't waste your time in doing useless things.\nInstead, do something useful and productive."
+    "Please don't waste your time in doing random things.\nInstead, do something useful and productive things."
   );
 };
 
-
-let hide = document.querySelector(".hide");
