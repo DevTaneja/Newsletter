@@ -26,10 +26,24 @@ const events = {
   },
 
   "2024-08-12": {
-    name: "Resume Writing",
+    name: "Resume Writing and AWS Cloud Fundamentals Bootcamp",
     description:
-      "Learn how to write an effective resume. Click for more details.",
+      "Learn how to write an effective resume.",
     color: "rgba(255, 99, 71, 0.6)", // Tomato Red with transparency
+  },
+  
+  "2024-09-06": {
+    name: "Stress Management",
+    description:
+      "The workshop aimed to equip students with creating awareness and importance of yoga for peaceful body and mind and how it helps in managing stress and anxiety and keeps you relaxing.",
+    color: "rgba(145, 255, 71, 0.6)", // Tomato Red with transparency
+  },
+
+  "2024-09-13": {
+    name: "Technical Dumb Charades",
+    description:
+      "As part of Paperless Day, the event Technical Dumb Charades was organized to foster creative learning and engagement among students.",
+    color: "rgba(154, 71, 255, 0.6)", // Tomato Red with transparency
   },
 
   "2024-09-11": {
@@ -65,6 +79,7 @@ const events = {
     color: "rgba(71, 255, 77, 0.6)", // Tomato Red with transparency
   },
 
+
   "2024-09-24": {
     name: "Expert session on Quality Research Publication techniques",
     description:
@@ -72,6 +87,129 @@ const events = {
     color: "rgba(255, 71, 212, 0.6)", // Tomato Red with transparency
   },
 
+  "2024-10-13": {
+    name: "Algomania",
+    description:
+      "To build momentum toward achieving greater competitive programming & DSA goals.To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+    color: "rgba(154, 71, 255, 0.6)", // Tomato Red with transparency
+  },
+  
+    "2024-10-13": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)", // Tomato Red with transparency
+    },
+    "2024-10-14": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-15": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-16": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-17": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-18": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-19": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-20": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-21": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-22": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-23": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-24": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-25": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-26": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-27": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-28": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-29": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-30": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+    "2024-10-31": {
+      name: "Algomania",
+      description:
+        "To build momentum toward achieving greater competitive programming & DSA goals. To find strong core motivation to solve problems daily and progress in the journey of DSA.",
+      color: "rgba(154, 71, 255, 0.6)",
+    },
+
+  
   "2024-10-03": {
     name: "Career in VLSI",
     description: "A session on career opportunities in VLSI.",
