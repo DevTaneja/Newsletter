@@ -75,7 +75,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-p {
+p ,li{
   text-align: justify;
   font-size: 20px;
   line-height: 1.6;
@@ -981,6 +981,20 @@ tr:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Match the table's row styling */
   text-align: center;
 }
+
+.project-development-head {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: rgba(133, 133, 133, 0.503);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Match the table's row styling */
+  text-align: center;
+}
+
+
 
 .company-column {
   width: 70%;

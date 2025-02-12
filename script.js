@@ -12,7 +12,12 @@ const events = {
       "The Objective of the session was to get familiar with Project development and management,and get familiar with tools like Jira, Agile etc.",
     color: "rgba(255, 71, 212, 0.6)", // Tomato Red with transparency
   },
-
+  "2024-07-30": {
+    name: "Training Session on 'Get ready for placements'",
+    description:
+      "The Objective was to create awareness about the placement and internship process , to provide guidance for Interview prepration, amcat and aptitude tests , and inspire students to take proactive steps to achieve thier future goals",
+    color: "rgba(71, 255, 77, 0.6)", // Tomato Red with transparency
+  },
   "2024-07-31": {
     name: "Training Session on 'Get ready for placements'",
     description:
