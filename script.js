@@ -26,6 +26,14 @@ const events = {
       "Learn how to write an effective resume. Click for more details.",
     color: "rgba(255, 99, 71, 0.6)", // Tomato Red with transparency
   },
+
+  "2024-09-11": {
+    name: "Aptitude Quiz ",
+    description:
+      "The Aptitude quiz was organized by the PDA.",
+    color: "rgba(72, 253, 193, 0.6)", // Green with transparency
+  },
+
   "2024-09-19": {
     name: "Art of Smart Work",
     description: "A workshop on productivity and smart work techniques.",

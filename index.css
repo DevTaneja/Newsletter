@@ -575,8 +575,14 @@ p {
   /* backdrop-filter: blur(10px); */
   /* -webkit-backdrop-filter: blur(10px); */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
 }
 
+#subHeading{
+  font-size: 1.2rem;
+  color: #555;
+}
 /* Section Title */
 .section-title {
   font-family: "Times New Roman", serif;
