@@ -162,6 +162,7 @@ p ,li{
   height: auto;
   margin: 0px;
 } 
+
 .image-container, .faculty-container {
   width: 100%; /* Adjust width as needed */
   /* max-height: 400px; Set a uniform height */
@@ -1444,6 +1445,7 @@ tr:hover {
 .grid3x1{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  /* grid-template-rows: ; */
 
 }
 .achievementBox img{
