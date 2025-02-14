@@ -337,3 +337,9 @@ bt1.onclick = () => {
   );
 };
 
+let width = window.innerWidth;
+
+if (width<500)
+{
+  alert("You are viewing this on a Phone ,You Can pinch out to zoom out and get a proper view ")
+}

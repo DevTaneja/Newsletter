@@ -1500,11 +1500,10 @@ tr:hover {
     margin: 0;
     padding: 0;
     justify-content: center;
-    /* width: fit-content; */
-    height: fit-content;
+    width: 100%;
+    /* height: fit-content;  */
   }
   .image-container img{
-    
     width: 100%;
     height: auto;
     display: block;
@@ -1545,7 +1544,7 @@ tr:hover {
   }
 
   .Grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0.8rem;
     font-size: 1rem;
   }
