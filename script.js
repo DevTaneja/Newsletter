@@ -345,7 +345,7 @@ let div = document.querySelector("#bt1");
 // Add an onclick event listener
 bt1.onclick = () => {
   alert(
-    "Please don't waste your time in doing random things.\nInstead, do something useful and productive things."
+    "Please don't waste your time in doing random things.\nInstead, do something useful and productive ."
   );
 };
 
