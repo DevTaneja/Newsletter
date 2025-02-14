@@ -794,7 +794,9 @@ tr:hover {
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 270px;
+  width: 320px;
+  /* display: flex; */
+  /* gap: 1rem; */
 }
 
 
@@ -1361,6 +1363,7 @@ tr:hover {
     max-width: 85%;
   }
 }
+
 .achievementBox{
   background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -1374,7 +1377,7 @@ tr:hover {
 }
 .achievementBox img{
   width: 100%;
-  height: auto;
+  height: 20%;
 }
 .hide{
   display: none;
