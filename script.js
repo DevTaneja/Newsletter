@@ -31,6 +31,18 @@ const events = {
       "Learn how to write an effective resume.",
     color: "rgba(255, 99, 71, 0.6)", // Tomato Red with transparency
   },
+  "2024-08-20": {
+      name: "Flipped Classroom DSA in SE-10",
+      description:
+        " Student will be able to employ Fibonacci search method on the given set of numbers, test various test cases..",
+      color: "rgba(255, 71, 246, 0.6)",
+    },
+    "2024-08-30": {
+      name: "Goal Setting and Self-Regulation ",
+      description:
+        " Empower students to take control of their learning and career path, ensuring continuous growth and development in the ever-evolving IT field.",
+      color: "rgba(249, 163, 33, 0.6)",
+    },
   
   "2024-09-06": {
     name: "Stress Management",
@@ -339,7 +351,7 @@ bt1.onclick = () => {
 
 let width = window.innerWidth;
 
-if (width<500)
+if (width<724)
 {
-  alert("You are viewing this on a Phone ,You Can pinch out to zoom out and get a proper view ")
+  alert("You are viewing this on a Phone ,You Can pinch out to zoom out and get a proper view ");
 }
