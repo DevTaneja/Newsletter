@@ -349,7 +349,7 @@ bt1.onclick = () => {
   );
 };
 
-let width = window.innerWidth;
+let width =  screen.width;
 
 if (width<724)
 {
