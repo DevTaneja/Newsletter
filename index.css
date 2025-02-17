@@ -1544,7 +1544,7 @@ tr:hover {
   }
 
   .Grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr 1fr;
     gap: 0.8rem;
     font-size: 1rem;
   }
@@ -1577,7 +1577,7 @@ tr:hover {
     width: 30px;
     height: 30px;
   }
-
+  
   .footer {
     font-size: 0.75rem;
   }
