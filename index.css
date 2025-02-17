@@ -403,7 +403,7 @@ p ,li{
 .container {
   max-width: 1200px;
   margin: 40px auto;
-  padding: 0;
+  padding: 30px;
 }
 
 /* Newspaper Theme */
@@ -1532,7 +1532,7 @@ tr:hover {
   }
 
   p {
-    line-height: 10vmin;
+    line-height: 12vmin;
     font-size: 18px;
     line-height: 1.4;
   }
