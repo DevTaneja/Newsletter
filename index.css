@@ -1532,6 +1532,7 @@ tr:hover {
   }
 
   p {
+    line-height: 5vmin;
     font-size: 18px;
     line-height: 1.4;
   }
