@@ -1521,18 +1521,18 @@ tr:hover {
 
   h1 {
     font-size: 34px;
-    line-height: 9vmin;
+    line-height: 14vmin;
     letter-spacing: -0.3px;
   }
 
   h2 {
-    line-height: 10vmin;
+    line-height: 12vmin;
     font-size: 22px;
     letter-spacing: -0.2px;
   }
 
   p {
-    line-height: 7vmin;
+    line-height: 10vmin;
     font-size: 18px;
     line-height: 1.4;
   }
