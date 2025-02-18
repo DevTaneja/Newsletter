@@ -43,6 +43,47 @@ const events = {
         " Empower students to take control of their learning and career path, ensuring continuous growth and development in the ever-evolving IT field.",
       color: "rgba(249, 163, 33, 0.6)",
     },
+
+    "2024-08-31": {
+      name: "Insem Exam (TE/BE)",
+      description:
+        "The Insem exams of Third Year and Fourth Year students started.",
+      color: "rgba(33, 249, 141, 0.6)",
+    },
+
+    "2024-09-02": {
+      name: "Insem Exam (TE/BE)",
+      description:
+        "The Insem exams of Third Year and Fourth Year students .",
+      color: "rgba(33, 249, 141, 0.6)",
+    },
+
+    "2024-09-03": {
+      name: "Insem Exam (TE/BE)",
+      description:
+        "The Insem exams of Third Year and Fourth Year students .",
+      color: "rgba(249, 33, 33, 0.6)",
+    },
+    "2024-09-04": {
+      name: "Insem Exam (TE/BE)",
+      description:
+        "The Insem exams of Third Year and Fourth Year students .",
+      color: "rgba(227, 33, 249, 0.6)",
+    },
+
+    "2024-09-05": {
+      name: "Insem Exam (TE/BE)",
+      description:
+        "The Insem exams of Third Year and Fourth Year students .",
+      color: "rgba(224, 249, 33, 0.6)",
+    },
+
+    "2024-09-06": {
+      name: "Insem Exam (TE/BE)",
+      description:
+        "The Insem exams of Third Year and Fourth Year students .",
+      color: "rgba(33, 123, 249, 0.6)",
+    },
   
   "2024-09-06": {
     name: "Stress Management",
@@ -232,6 +273,33 @@ const events = {
     description: "An intensive AI workshop for beginners and professionals.",
     color: "rgba(75, 0, 130, 0.6)", // Indigo with transparency
   },
+  
+    "2024-11-28": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(255, 0, 0, 0.36)" }, // Red
+    "2024-11-29": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(14, 219, 14, 0.6)" }, // Green
+    "2024-11-30": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(57, 57, 251, 0.6)" }, // Blue
+    "2024-12-02": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(255, 165, 0, 0.6)" }, // Orange
+    "2024-12-03": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(0, 130, 22, 0.6)" }, // Indigo
+    "2024-12-04": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(128, 0, 128, 0.6)" }, // Purple
+    "2024-12-05": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(0, 255, 255, 0.6)" }, // Cyan
+    "2024-12-06": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(255, 56, 89, 0.6)" }, // Pink
+    "2024-12-07": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(230, 46, 218, 0.6)" }, // Brown
+    "2024-12-09": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(255, 218, 9, 0.6)" }, // Gold
+    "2024-12-10": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(211, 1, 1, 0.6)" }, // Dark Green
+    "2024-12-11": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(0, 0, 128, 0.6)" }, // Navy Blue
+    "2024-12-12": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(220, 20, 60, 0.6)" }, // Crimson
+    "2024-12-13": { name: "Endsem Exams", description: "Endsem exams for SE/TE/BE.", color: "rgba(255, 132, 0, 0.6)" }, // Silver
+    "2024-12-14": { name: "Practical Exams", description: "Practical Exams for SE/BE/TE.", color: "rgba(0, 255, 200, 0.6)" }, // Red-Orange
+    "2024-12-16": { name: "Practical Exams", description: "Practical Exams for SE/BE/TE.", color: "rgba(187, 255, 0, 0.6)" }, // Indigo
+    "2024-12-17": { name: "Practical Exams", description: "Practical Exams for SE/BE/TE.", color: "rgba(94, 255, 94, 0.6)" }, // Forest Green
+    "2024-12-18": { name: "Practical Exams", description: "Practical Exams for SE/BE/TE.", color: "rgba(0, 114, 208, 0.6)" }, // Steel Blue
+    "2024-12-19": { name: "Practical Exams", description: "Practical Exams for SE/BE/TE.", color: "rgba(0, 255, 247, 0.6)" }, // Dark Orange
+    "2024-12-20": { name: "Practical Exams", description: "Practical Exams for SE/BE/TE.", color: "rgba(123, 104, 238, 0.6)" }, // Medium Slate Blue
+    "2024-12-21": { name: "Practical Exams", description: "Practical Exams for SE/BE/TE.", color: "rgba(207, 41, 11, 0.6)" }, // Tomato
+    "2024-12-23": { name: "Practical Exams", description: "Practical Exams for SE/BE/TE.", color: "rgba(48, 0, 106, 0.6)" }, // Dark Slate Gray
+
+  
+ 
+  
   "2024-12-15": {
     name: "Hackathon Finale",
     description: "The grand finale of the annual hackathon.",
