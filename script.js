@@ -321,9 +321,6 @@ const events = {
       "2024-12-21": { "name": "Practical Exams", "description": "Practical Exams for SE/BE/TE.", "color": "rgba(255, 0, 43, 0.5)" }, 
       "2024-12-23": { "name": "Practical Exams", "description": "Practical Exams for SE/BE/TE.", "color": "rgba(255, 0, 43, 0.5)" },
     
-    
-  
- 
   
   "2024-12-15": {
     name: "Hackathon Finale",
